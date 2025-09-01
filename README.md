@@ -29,25 +29,4 @@ The trajectory is optimized in the **ENU world frame** and expressed with respec
 > ⚠️ Note: Large raw datasets are not stored in this repository.  
 > Please refer to the [iniVation DAVIS346 datasheet](https://inivation.com/davis346/) and follow the acquisition guidelines described in the thesis.
 
----
-
-## 🚀 Requirements
-
-- **MATLAB** R2023a or newer  
-  Toolboxes:
-  - Computer Vision Toolbox  
-  - Optimization Toolbox  
-- **GTSAM** (tested with v4.2)  
-- **Git LFS** (if working with large `.mat` datasets)
-
----
-
-## ▶️ Usage
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/FrancescoGriguol/master-thesis.git
-   cd master-thesis
-
-## 📂 Repository Structure
 
