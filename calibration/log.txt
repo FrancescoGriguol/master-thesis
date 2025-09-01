@@ -1,0 +1,260 @@
+Calibrating begins...
+IMU settings:
+  Update rate: 200
+  Accelerometer: 
+    Noise density: 0.0014
+    Noise density (discrete): 0.019799
+    Random walk: 8.6e-05
+  Gyroscope: 
+    Noise density: 8e-05
+    Noise density (discrete): 0.00113137
+    Random walk: 2.2e-06
+Initializing camera:
+  Camera model: pinhole
+  Focal length: [346 346]
+  Principal point: [173 130]
+Calibration target:
+  Type: APRIL_GRID
+  Tags:
+    Cols: 6
+    Rows: 6
+    Size: 0.021 [m]
+    PatterSpacing: 0.285714 [m]
+    Spacing : 0.00599999 [m]
+camTargetObservations size: 1
+camId: 0
+Calibrating intrinsics using 2231 detections.
+Initialization of focal length failed. You can enable manual input by setting 'KALIBR_MANUAL_FOCAL_LENGTH_INIT'.
+Initialization of focal length failed
+calibrateIntrinsics: intrinsics guess:   346   346 172.5 129.5
+calibrateIntrinsics: distortion guess: 0 0 0 0
+calibrateIntrinsics: adding camera error terms for 2231 calibration targets
+calibrateIntrinsics: added 151631 camera error terms
+No linear system solver set in the options. Defaulting to the sparse_cholesky solver
+Using the sparse_cholesky linear system solver
+Using the levenberg_marquardt trust region policy
+calibrateIntrinsics: Before Optimization:  mean: 0.0688632 std: 0.0693079
+No linear system solver set in the options. Defaulting to the sparse_cholesky solver
+Using the sparse_cholesky linear system solver
+Using the levenberg_marquardt trust region policy
+Initializing
+Optimization problem initialized with 4464 design variables and 151631 error terms
+The Jacobian matrix is 303262 x 13394
+[0.0]: J: 10441.8
+Last step was a regression. Reverting
+[1]: J: 10995.1, dJ: -553.333, deltaX: 0.207096, LM - lambda:10 mu:2
+[2]: J: 10040.9, dJ: 400.889, deltaX: 0.0409252, LM - lambda:40 mu:4
+[3]: J: 9348.37, dJ: 692.53, deltaX: 0.142545, LM - lambda:13.3333 mu:2
+Last step was a regression. Reverting
+[4]: J: 14855.7, dJ: -5507.29, deltaX: 0.260492, LM - lambda:4.44444 mu:2
+[5]: J: 8656.1, dJ: 692.274, deltaX: 0.0417168, LM - lambda:17.7778 mu:4
+Last step was a regression. Reverting
+[6]: J: 10233.3, dJ: -1577.2, deltaX: 0.171268, LM - lambda:5.92593 mu:2
+[7]: J: 8407.75, dJ: 248.346, deltaX: 0.0193229, LM - lambda:23.7037 mu:4
+[8]: J: 8402.32, dJ: 5.43169, deltaX: 0.108061, LM - lambda:7.90123 mu:2
+[9]: J: 7261.37, dJ: 1140.95, deltaX: 0.0463114, LM - lambda:15.3421 mu:2
+Last step was a regression. Reverting
+[10]: J: 7508.46, dJ: -247.086, deltaX: 0.119271, LM - lambda:5.11404 mu:2
+[11]: J: 7100.58, dJ: 160.793, deltaX: 0.0232203, LM - lambda:20.4562 mu:4
+[12]: J: 6954.29, dJ: 146.284, deltaX: 0.0782704, LM - lambda:6.81872 mu:2
+[13]: J: 6589.29, dJ: 365.005, deltaX: 0.0897344, LM - lambda:6.81781 mu:2
+[14]: J: 6515.84, dJ: 73.4422, deltaX: 0.733149, LM - lambda:2.2726 mu:2
+[15]: J: 6485.69, dJ: 30.1552, deltaX: 4.46456, LM - lambda:0.757534 mu:2
+[16]: J: 6465.87, dJ: 19.8143, deltaX: 3.99631, LM - lambda:0.606241 mu:2
+[17]: J: 6456.31, dJ: 9.56759, deltaX: 2.77299, LM - lambda:0.521183 mu:2
+[18]: J: 6453.15, dJ: 3.15335, deltaX: 1.81217, LM - lambda:0.410501 mu:2
+[19]: J: 6452.37, dJ: 0.785823, deltaX: 0.900396, LM - lambda:0.33925 mu:2
+calibrateIntrinsics: After Optimization:  mean: 0.0425531 std: 0.0342874
+calibrateIntrinsics: optimized intrinsics guess: 347.874 347.352 157.756 126.522
+calibrateIntrinsics: optimized distortion guess:   -0.369803    0.186481 -0.00188857  0.00341995
+calibrateIntrinsics: initializing calibrator
+calibrateIntrinsics: Filtering outliers in all batches
+calibrateIntrinsics: All views have been processed. Starting final outlier filtering...
+Crazy loop finished.. 
+
+Intrinsics Calibration complete.
+
+Removed 1 outlier corners.
+Processed 2231 images with 86 images used
+Intrinsic calibration results:
+  projection: 344.26 343.683 156.345 128.57 
+  distortion: -0.370143 0.19374 -0.00220998 0.00399782 
+  reprojection error: [1.40133e-05, -1.20948e-06] +- [0.142047, 0.150235]
+  baseline:            1  4.67585e-12  9.98215e-13 -1.32126e-12
+-4.67585e-12            1  2.05131e-12 -4.61578e-12
+-9.98215e-13 -2.05131e-12            1  1.13554e-11
+           0            0            0            1
+
+Camera Model: Distorted Pinhole 
+Distortion Model: RadialTangential
+Finished calibration of intrinsics.
+Building the problem...
+Calibrating using 2231 detections.
+	Spline order: 6
+	Pose knots per second: 100
+		xddot translation variance: 1e+06
+		xddot rotation variance: 100000
+	Bias knots per second: 50
+	Do bias motion regularization: true
+	Blake-Zisserman on reprojection errors -1
+	Acceleration Huber width (sigma): -1
+	Gyroscope Huber width (sigma): -1
+	Do time calibration: true
+	Max iterations: 50
+	Time offset padding: 0.03
+Initializing a pose spline with 9204 knots (100 knots per second over 92.0401 seconds)
+  Time shift camera to imu (t_imu = t_cam + shift): 
+  0.00199975
+
+Estimating imu-camera rotation prior
+
+Initializing a pose spline with 9204 knots (100 knots per second over 92.0401 seconds)
+Gravity was intialized to    9.80621  -0.038735 -0.0722544 [m/s^2]
+ Transformation prior camera-imu found as: (T_extrinsic)
+  0.997247 0.00743059 -0.0737723          0
+0.00640473   -0.99988 -0.0141325          0
+-0.0738685  0.0136211  -0.997175          0
+         0          0          0          1
+  Gyro bias prior found as: (b_gyro)
+ 0.0158015 -0.0160041  0.0264244
+
+Initializing a pose spline with 9216 knots (100 knots per second over 92.1601 seconds)
+
+Initializing the bias splines with 4608 knots
+
+Adding camera error terms (2231) ...
+  Added 2231 camera error tems
+
+Adding accelerometer error terms (92072) ...
+  Added 91947 of 92072 accelerometer error terms (skipped 125 out-of-bounds measurements)
+
+Adding gyroscope error terms (92072) ...
+  Added 91947 of 92072 gyroscope error terms (skipped 125 out-of-bounds measurements)
+Calibrating using 2231 target observations and 92072 IMU measurements 
+BEFORE OPTIMIZATION
+
+Normalized Residuals
+-------------------
+Reprojection error:    mean: 262.003 median: 266.394 std: 46.0196
+Gyroscope error:       mean: 28.7626 median: 14.5259 std: 41.8472
+Accelerometer error:   mean: 171.152 median: 88.4599 std: 315.18
+
+Residuals
+-------------------
+Reprojection error [px]:      mean: 16.1196 median: 16.3216 std: 1.47042
+Gyroscope error [rad/s]:      mean: 0.1509 median: 0.128196 std: 0.0988451
+Accelerometer error [m/s^2]:  mean: 1.53306 median: 1.32341 std: 1.01899
+Optimizing...
+
+Before Optimization
+###################
+
+Normalized Residuals
+-------------------
+Reprojection error:    mean: 262.003 median: 266.394 std: 46.0196
+Gyroscope error:       mean: 28.7626 median: 14.5259 std: 41.8472
+Accelerometer error:   mean: 171.152 median: 88.4599 std: 315.18
+
+Residuals
+-------------------
+Reprojection error [px]:      mean: 16.1196 median: 16.3216 std: 1.47042
+Gyroscope error [rad/s]:      mean: 0.1509 median: 0.128196 std: 0.0988451
+Accelerometer error [m/s^2]:  mean: 1.53306 median: 1.32341 std: 1.01899
+
+Optimizing...
+Using the block_cholesky linear system solver
+Using the levenberg_marquardt trust region policy
+Using the block_cholesky linear system solver
+Using the levenberg_marquardt trust region policy
+Initializing
+Optimization problem initialized with 18451 design variables and 335527 error terms
+The Jacobian matrix is 854946 x 83013
+[0.0]: J: 5.81092e+07
+[1]: J: 2.22063e+07, dJ: 3.59029e+07, deltaX: 0.27469, LM - lambda:10 mu:2
+[2]: J: 3.52345e+06, dJ: 1.86829e+07, deltaX: 0.394887, LM - lambda:9.77686 mu:2
+Last step was a regression. Reverting
+[3]: J: 4.36362e+07, dJ: -4.01127e+07, deltaX: 1.02748, LM - lambda:4.34487 mu:2
+[4]: J: 1.91866e+06, dJ: 1.60479e+06, deltaX: 0.158221, LM - lambda:17.3795 mu:4
+Last step was a regression. Reverting
+[5]: J: 3.40742e+06, dJ: -1.48876e+06, deltaX: 0.567567, LM - lambda:16.692 mu:2
+[6]: J: 915974, dJ: 1.00268e+06, deltaX: 0.0567879, LM - lambda:66.7679 mu:4
+Last step was a regression. Reverting
+[7]: J: 952717, dJ: -36742.3, deltaX: 0.268934, LM - lambda:22.256 mu:2
+[8]: J: 890318, dJ: 25655.8, deltaX: 0.0648032, LM - lambda:89.0239 mu:4
+[9]: J: 829920, dJ: 60398.7, deltaX: 0.0161849, LM - lambda:89.6454 mu:2
+[10]: J: 687956, dJ: 141963, deltaX: 0.191949, LM - lambda:29.8818 mu:2
+Last step was a regression. Reverting
+[11]: J: 1.94422e+06, dJ: -1.25627e+06, deltaX: 0.83931, LM - lambda:9.9606 mu:2
+[12]: J: 611090, dJ: 76866.4, deltaX: 0.0454143, LM - lambda:39.8424 mu:4
+Last step was a regression. Reverting
+[13]: J: 719670, dJ: -108580, deltaX: 0.39951, LM - lambda:13.2808 mu:2
+[14]: J: 568518, dJ: 42572, deltaX: 0.107035, LM - lambda:53.1232 mu:4
+[15]: J: 481037, dJ: 87480.7, deltaX: 0.157371, LM - lambda:17.7077 mu:2
+[16]: J: 383479, dJ: 97558.2, deltaX: 0.258169, LM - lambda:13.7879 mu:2
+[17]: J: 262826, dJ: 120653, deltaX: 0.134229, LM - lambda:13.4985 mu:2
+Last step was a regression. Reverting
+[18]: J: 505023, dJ: -242197, deltaX: 0.287117, LM - lambda:4.49949 mu:2
+[19]: J: 233601, dJ: 29225.3, deltaX: 0.0639426, LM - lambda:17.998 mu:4
+Last step was a regression. Reverting
+[20]: J: 275593, dJ: -41992.4, deltaX: 0.195749, LM - lambda:5.99932 mu:2
+[21]: J: 227699, dJ: 5901.29, deltaX: 0.0302604, LM - lambda:23.9973 mu:4
+[22]: J: 225295, dJ: 2404.26, deltaX: 0.129207, LM - lambda:7.99909 mu:2
+[23]: J: 206031, dJ: 19263.8, deltaX: 0.0626265, LM - lambda:9.8292 mu:2
+[24]: J: 205060, dJ: 970.65, deltaX: 0.144279, LM - lambda:3.2764 mu:2
+[25]: J: 200271, dJ: 4789.29, deltaX: 0.0393675, LM - lambda:3.85759 mu:2
+[26]: J: 200024, dJ: 246.951, deltaX: 0.0652838, LM - lambda:1.28586 mu:2
+[27]: J: 199998, dJ: 25.7769, deltaX: 0.0284056, LM - lambda:0.428621 mu:2
+[28]: J: 199998, dJ: 0.660038, deltaX: 0.0022261, LM - lambda:0.142874 mu:2
+[29]: J: 199998, dJ: 0.0245044, deltaX: 0.000410579, LM - lambda:0.0476246 mu:2
+[30]: J: 199998, dJ: 0.00163998, deltaX: 5.01272e-05, LM - lambda:0.0158749 mu:2
+
+After Optimization
+###################
+
+Normalized Residuals
+-------------------
+Reprojection error:    mean: 0.816389 median: 0.19995 std: 2.05984
+Gyroscope error:       mean: 0.328805 median: 0.137371 std: 0.575816
+Accelerometer error:   mean: 0.499708 median: 0.226458 std: 0.799969
+
+Residuals
+-------------------
+Reprojection error [px]:      mean: 0.649356 median: 0.447158 std: 0.628272
+Gyroscope error [rad/s]:      mean: 0.0154567 median: 0.0124667 std: 0.0115365
+Accelerometer error [m/s^2]:  mean: 0.0819443 median: 0.0669599 std: 0.0563813
+
+Results
+#######
+
+Optimization converged:
+  true
+Transformation T_cam_imu:
+   0.994425 0.000388409    0.105448  -0.0637018
+ 0.00937863   -0.996356   -0.084775   0.0906442
+   0.105031   0.0852913   -0.990805      1.4014
+          0           0           0           1
+Camera to imu time: [s] (t_imu = t_cam + shift):
+  0.000778188
+AFTER OPTIMIZATION
+
+Normalized Residuals
+-------------------
+Reprojection error:    mean: 0.816389 median: 0.19995 std: 2.05984
+Gyroscope error:       mean: 0.328805 median: 0.137371 std: 0.575816
+Accelerometer error:   mean: 0.499708 median: 0.226458 std: 0.799969
+
+Residuals
+-------------------
+Reprojection error [px]:      mean: 0.649356 median: 0.447158 std: 0.628272
+Gyroscope error [rad/s]:      mean: 0.0154567 median: 0.0124667 std: 0.0115365
+Accelerometer error [m/s^2]:  mean: 0.0819443 median: 0.0669599 std: 0.0563813
+RESULT
+Optimization converged:
+  true
+Transformation T_cam_imu:
+   0.994425 0.000388409    0.105448  -0.0637018
+ 0.00937863   -0.996356   -0.084775   0.0906442
+   0.105031   0.0852913   -0.990805      1.4014
+          0           0           0           1
+Camera to imu time: [s] (t_imu = t_cam + shift):
+  0.000778188
